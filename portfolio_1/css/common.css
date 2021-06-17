@@ -1,0 +1,67 @@
+@charset "utf-8";
+.inner {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* 바디크기는 1440px */
+
+#header {
+    border-bottom: 1px solid #fff;
+}
+#header .top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1440px;
+    /* border-bottom: 1px solid #fff; */
+
+}
+
+#header h1 {
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    width:180px;
+    /* border:1px solid salmon; */
+    margin: 12px 0;
+}
+
+#header h1 img {
+    vertical-align: middle;
+}
+
+#header #nav {
+    position: absolute;
+    top: 0px;
+    left:50%;
+    margin-left: -370px ;
+}
+
+#header #nav .depth1 li {
+    float: left;
+    padding: 0 30px;
+    letter-spacing: 2px;
+    line-height: 70px;
+    font-size: 15px;
+    color: #fff;
+}
+
+#header .membership {
+    position: absolute;
+    top: 0;
+    right: 30px;
+}
+
+#header .membership a {
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 70px;
+    font-size: 13px;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+
+#header .membership a:first-child {
+    padding-right: 10px;
+}
