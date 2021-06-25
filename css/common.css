@@ -1,0 +1,207 @@
+@charset "utf-8";
+
+.inner {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 70px; */
+    border-bottom: 0.4px solid #fff;
+    z-index: 9999;
+}
+
+#header .top {
+    position: relative;
+    height: 70px;
+    /* background-color: rgb(124, 164, 237); */
+}
+
+
+#header h1 {
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    width: 180px;
+    /* border:1px solid salmon; */
+    margin: 12px 0;
+}
+
+#header h1 img {
+    vertical-align: middle;
+}
+
+#header #nav {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -370px;
+}
+
+/* #header #nav .depth1 {
+    background-color: rosybrown;
+} */
+
+#header #nav .depth1>li {
+    float: left;
+    padding: 0 30px;
+    letter-spacing: 2px;
+    line-height: 70px;
+    font-size: 15px;
+    color: #fff;
+    position: relative;
+    /* background-color: red; */
+}
+
+#header #nav .depth1>li:hover {
+    color: rgb(124, 164, 237);
+    border-bottom: 1px solid rgb(124, 164, 237);
+    z-index: 99;
+
+}
+
+#header #nav .depth2 {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 100%;
+    height: 0;
+    padding: 20px 30px;
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: 98;
+    overflow: hidden;
+
+}
+
+#header #nav .depth2>li {
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+    color: #555;
+
+}
+
+#header #nav .depth2>li:hover {
+    color: rgb(124, 164, 237);
+}
+
+#header #nav .depth1:hover .depth2 {
+    opacity: 1;
+    height: 151px;
+}
+
+#header .bgbox {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    opacity: 0;
+    background-color: #fff;
+    z-index: 97;
+    transition: all 0.5s;
+}
+
+#header #nav:hover~.bgbox {
+    height: 160px;
+    opacity: 1;
+}
+
+#header .membership {
+    position: absolute;
+    top: 0;
+    right: 40px;
+}
+
+#header .membership a {
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 70px;
+    font-size: 14px;
+    display: inline-block;
+    letter-spacing: -0.5px;
+}
+
+#header .membership a:first-child {
+    padding-right: 15px;
+}
+
+/* footer starts from here */
+
+#footer {
+    padding:50px 0;
+    background-color: rgb(46, 52, 62);
+    color: rgb(215, 215, 215);
+    position: relative;
+    height: 390px;
+}
+
+#footer .inner {
+    position: relative;
+}
+
+#footer .info {
+   position: absolute;
+   top: 0;
+   left: 50%;
+   margin-left: -235px;
+}
+
+#footer li {
+    float: left;
+    margin-bottom: 40px;
+}
+
+#footer li a {
+  padding: 5px 0px;
+  margin: 0px 20px;
+}
+
+#footer .sns {
+    text-align: center;
+    font-size: 25px;
+}
+
+#footer .sns a {
+    margin: 0px 10px;
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+
+#footer .sns a:hover {
+    opacity: 1;
+    color: #fff;
+}
+
+#footer .add {
+    margin-top: 40px;
+}
+
+#footer p {
+    text-align: center;
+    line-height: 1.5em;
+    color: rgb(240, 232, 226);
+    font-size: 14.5px;
+}
+
+#footer p:last-child {
+    margin: 20px 0;
+}
+
+#footer span {
+    color: rgb(160, 160, 160);
+    padding: 0 10px;
+}
+
+#footer em {
+    font-style: normal;
+}
