@@ -123,6 +123,7 @@
     background-image: url(http://bdmp-007.cafe24.com/bizdemo110098/img/onepixel/images/main_parallax_bg.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size:cover;
     padding: 200px 0px;
     color: #fff;
     text-align: center;
